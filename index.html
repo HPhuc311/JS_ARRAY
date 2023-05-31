@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS _ARRAY</title>
+    <!-- FONTAWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BS V5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container w-50 my-5">
+    <div class="content__top">
+        <i class="fa-solid fa-book"></i> 
+        <p class="text-center">BÀI TẬP MẢNG</p>
+        <i class="fa-solid fa-book"></i>
+    </div>
+
+    <div class="content__header mx-5 my-5">
+        <input id="inputofUser" type="number" placeholder="Nhập số n">
+        <button id="clickToAdd" type="button" class="btn btn-primary">Thêm số</button>
+         <button id="clickToRemove" type="button" class="btn btn-primary">Xóa số</button>
+    </div>
+    <div class="option__results1">
+        <i class="fa-solid fa-hand-point-right"></i><span id="resultEx"></span> 
+     </div>
+    <div class="container content m my-5">
+        <div class="content__body">
+        <div  id="ex1" class="select-btn">
+            <span class="sBtn-text"><img src="./img/001-number-one.png" alt=""> Tổng số dương</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults1" type="button" class="btn btn-primary">Tính tổng</button>
+        </div>
+        <div id="table1" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex2" class="select-btn2">
+            <span class="sBtn-text"><img src="./img/002-number-2.png" alt="">   Đếm số dương</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults2" type="button" class="btn btn-primary">Đếm số</button>
+        </div>
+        <div id="table2" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex3" class="select-btn3">
+            <span class="sBtn-text"><img src="./img/003-number-3.png" alt="">   Tìm số nhỏ nhất</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults3" type="button" class="btn btn-primary">Tìm số nhỏ nhất</button>
+        </div>
+        <div id="table3" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex4" class="select-btn4">
+            <span class="sBtn-text"><img src="./img/004-number-four.png" alt="">   Tìm số dương nhỏ nhất</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults4" type="button" class="btn btn-primary">Tìm số dương nhỏ nhất</button>
+        </div>
+        <div id="table4" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex5" class="select-btn5">
+            <span class="sBtn-text"><img src="./img/005-number-5.png" alt="">   Tìm số chắn cuối cùng</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults5" type="button" class="btn btn-primary">Tìm số chẵn</button>
+        </div>
+        <div id="table5" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex6" class="select-btn6">
+            <span class="sBtn-text"><img src="./img/006-six.png" alt="">   Đổi chỗ</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="row">
+            <div class="col-6">
+            <input class="input" id="inputofUser1" type="number" placeholder="Nhập số vị trí 1">
+            </div>
+            <div class="col-6">
+                <input class="input" id="inputofUser2" type="number" placeholder="Nhập số vị trí 2">
+                </div>
+        </div>
+        <div class="option__body">
+            <button id="clickResults6" type="button" class="btn btn-primary">Đổi chỗ</button>
+        </div>
+        <div id="table6" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex7" class="select-btn7">
+            <span class="sBtn-text"><img src="./img/007-seven.png" alt="">   Sắp xếp tăng dần</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults7" type="button" class="btn btn-primary">Tính tổng</button>
+        </div>
+        <div id="table7" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex8" class="select-btn8">
+            <span class="sBtn-text"><img src="./img/008-number-8.png" alt="">   Tìm số nguyên tố đầu tiên</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults8" type="button" class="btn btn-primary">Tính tổng</button>
+        </div>
+        <div id="table8" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex9" class="select-btn9">
+            <span class="sBtn-text"><img src="./img/009-number-9.png" alt="">   Đếm số nguyên</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults9" type="button" class="btn btn-primary">Tính tổng</button>
+        </div>
+        <div id="table9" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+        <div class="content__body">
+        <div id="ex10" class="select-btn10">
+            <span class="sBtn-text"><img src="./img/010-number-10.png" alt="">   So sánh số lượng số âm và dương</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="option__body">
+            <button id="clickResults10" type="button" class="btn btn-primary">Tính tổng</button>
+        </div>
+        <div id="table10" class="option__results">
+           <i  class="fa-solid fa-hand-point-right"></i><span id="resultEx1"></span> 
+        </div>
+        </div>
+    </div>
+</div>
+<!-- Jquery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- BS V5.2 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<!-- MY JS -->
+<script src="./effect.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #edf2f9;
+}
+.container{
+    background-image: url(./img/corner-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ecf0f3;
+    height: 100%;
+    overflow: hidden;
+}
+.content__top{
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.content__top p{
+    margin: 0 20px;
+}
+.content__top i{
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: navy;
+}
+.content__header{
+    display: flex;
+    gap: 20px;
+
+}
+.content__header input{
+    padding: 10px 40px;
+    border-radius: 10px;
+    width: 350px;
+    border: none;
+    box-shadow: 3px 3px 5px 1px #d7dfe9 inset;
+    background-color: #ecf0f3;
+}
+.content__header button{
+    padding: 10px 30px;
+    transform: scale(1);
+    transition: all .2s;
+}
+.content__header button:hover{
+    transform: scale(0.9);
+}
+.content__body{
+    background-color: white;
+    margin-top: 10px;
+}
+.content__body img{
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    display: inline-block;
+}
+.content__body input{
+    margin: 20px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    width: 350px;
+    border: none;
+    box-shadow: 3px 3px 5px 1px #d7dfe9 inset;
+    background-color: #ecf0f3;
+    display: none;
+}
+.content__body i{
+    text-align: right;
+    transition: 0.3s;
+}
+.content__body .select-btn{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn2{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn3{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn4{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn5{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn6{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn7{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn8{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn9{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content__body .select-btn10{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.option__body button{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    transform: scale(1);
+    transition: all .2s;
+    display: none;
+}
+.option__body button:hover{
+    transform: scale(0.9);
+}
+.option__results{
+    background-color:#d1e7dd;
+    border: 1px solid #c4e1d3;
+}
+.option__results {
+    padding: 30px;
+    display: none;
+}
+.option__results1{
+    background-color:#d1e7dd;
+    border: 1px solid #c4e1d3;
+}
+.option__results1 {
+    padding: 30px;
+}
+
+.select-btn.active i{
+    transform: rotate(-180deg);
+}
+.select-btn2.active i{
+    transform: rotate(-180deg);
+}
+.select-btn3.active i{
+    transform: rotate(-180deg);
+}
+.select-btn4.active i{
+    transform: rotate(-180deg);
+}
+.select-btn5.active i{
+    transform: rotate(-180deg);
+}
+.select-btn6.active i{
+    transform: rotate(-180deg);
+}
+.select-btn7.active i{
+    transform: rotate(-180deg);
+}
+.select-btn8.active i{
+    transform: rotate(-180deg);
+}
+.select-btn9.active i{
+    transform: rotate(-180deg);
+}
+.select-btn10.active i{
+    transform: rotate(-180deg);
+}
+
+
