@@ -97,13 +97,17 @@ getElement('#clickResults4').onclick = function()  {
 
 // Ex5 : Tìm số chẵn cuối cùng:
 function findLastEvenNumber(){
-  var numberLastEvenNumber = []
+  var lastEven = -1
   for(var i = 0; i < arr.length ; i++){
-    if(arr[i] % 2 === 0){
-      numberLastEvenNumber.push(arr[i])
-      break
+    var value = arr[i]
+    if(value % 2 === 0){
+      lastEven = value
+      document.querySelector('#resultEx5').innerHTML = ' Số chẵn cuối cùng là: ' + lastEven
+    }
+    if (lastEven === -1){
+      document.querySelector('#resultEx5').innerHTML = ' Không có số chẵn trong mảng '
     }
   }
-  document.querySelector('#resultEx5').innerHTML = ' Số chắn cuối cùng là: ' + number 
+ 
 }
 getElement('#clickResults5').onclick = findLastEvenNumber
