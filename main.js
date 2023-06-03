@@ -70,3 +70,40 @@ function smallestofNumber(){
 }
 
 getElement('#clickResults3').onclick = smallestofNumber
+
+// Ex4: Tìm số dương nhỏ nhất
+function findSmallestPositive(numbers) {
+  var smallestPositive = null;
+  for (var i = 0; i < numbers.length; i++) {
+    var num = numbers[i];
+    if (num > 0) {
+      if (smallestPositive === null || num < smallestPositive) {
+        smallestPositive = num;
+      }
+    }
+  }
+
+  return smallestPositive;
+}
+getElement('#clickResults4').onclick = function()  {
+  var result = findSmallestPositive(arr)
+  if (result === null) {
+    document.querySelector('#resultEx4').innerHTML = ' Không có số dương trong mảng '
+  } else {
+    document.querySelector('#resultEx4').innerHTML = ' Số dương nhỏ nhất trong mảng là: ' + result
+  }
+
+}
+
+// Ex5 : Tìm số chẵn cuối cùng:
+function findLastEvenNumber(){
+  var numberLastEvenNumber = []
+  for(var i = 0; i < arr.length ; i++){
+    if(arr[i] % 2 === 0){
+      numberLastEvenNumber.push(arr[i])
+      break
+    }
+  }
+  document.querySelector('#resultEx5').innerHTML = ' Số chắn cuối cùng là: ' + number 
+}
+getElement('#clickResults5').onclick = findLastEvenNumber
