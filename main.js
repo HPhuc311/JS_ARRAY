@@ -111,3 +111,27 @@ function findLastEvenNumber(){
  
 }
 getElement('#clickResults5').onclick = findLastEvenNumber
+
+// EX6: Đổi chỗ các phần tử trong mảng 
+
+function doiCho(arr, index1, index2) {
+  // Lưu giữ giá trị của phần tử tại index1 vào biến tạm thời
+  var temp = arr[index1];
+
+  // Gán giá trị của phần tử tại index2 cho phần tử tại index1
+  arr[index1] = arr[index2];
+
+  // Gán giá trị của biến tạm thời cho phần tử tại index2
+  arr[index2] = temp;
+
+  return arr; // Trả về mảng đã đổi chỗ
+}
+
+function changPosition (){
+  var position1 = +document.querySelector('#inputofUser1').value
+  var position2 = +document.querySelector('#inputofUser2').value
+  var changeNumber = doiCho(arr,position1,position2)
+  document.querySelector('#resultEx6').innerHTML = 'Mảng sau khi đổi: ' + changeNumber
+}
+
+getElement('#clickResults6').onclick = changPosition
