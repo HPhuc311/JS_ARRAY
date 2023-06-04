@@ -153,3 +153,29 @@ function arrangeNumber (){
 getElement('#clickResults7').onclick = arrangeNumber
 
 // Ex8: Tìm số nguyên tố đầu tiên
+
+function primeofNumber(num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (var i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+function firstNumberOfPrime(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (Number.isInteger(arr[i]) && primeofNumber(arr[i])) {
+      return arr[i];
+    }
+  }
+  return null;
+}
+
+getElement('#clickResults8').onclick = function(){
+  var numbwrFirstPrime = firstNumberOfPrime(arr);
+  getElement('#resultEx8').innerHTML = 'Số nguyên tố dầu tiên có trong mảng: ' + numbwrFirstPrime
+}
+
