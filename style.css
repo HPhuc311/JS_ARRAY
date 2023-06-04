@@ -178,9 +178,19 @@ body{
     padding: 30px;
     display: none;
 }
+
+.option__results img{
+    height: 25px;
+    width: 25px;
+}
+
 .option__results1{
     background-color:#d1e7dd;
     border: 1px solid #c4e1d3;
+}
+.option__results1 img{
+    height: 25px;
+    width: 25px;
 }
 .option__results1 {
     padding: 30px;
