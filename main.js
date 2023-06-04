@@ -1,19 +1,14 @@
 function getElement(element){
   return document.querySelector(element)
 }
-
 //EX1: Nhập mảng 
-
 var arr = []
 var count = 0 
-
-
 function inputArray(){
   var num = +getElement('#inputofUser').value
   arr[count] = num;
   count++
 }
-
 function outputArray(){
   var result = ""
   for(var i = 0; i < count; i++){
@@ -21,15 +16,11 @@ function outputArray(){
   }
   return result
 }
-
-
 getElement('#clickToAdd').onclick= function(){
   inputArray()
   getElement('#resultEx').innerHTML = outputArray()
 }
-
 // Ex2: Tính tổng các số dương
-
 function sumofPositive(){
   var sum = 0
   for( var i = 0; i < arr.length; i++){
@@ -39,12 +30,8 @@ function sumofPositive(){
   }
   document.querySelector('#resultEx1').innerHTML = ' Tổng số dương là: ' + sum
 }
-
 getElement('#clickResults1').onclick = sumofPositive
-
-
 // Ex2: Đếm các số dương
-
 function countofPositive(){
   var dem = 0 
   for (var j = 0; j < arr.length; j++){
@@ -52,13 +39,9 @@ function countofPositive(){
       dem++
     } 
   }
-
   document.querySelector('#resultEx2').innerHTML = ' Số dương là: ' + dem
 }
-
 getElement('#clickResults2').onclick = countofPositive 
-
-
 // Ex3: Tìm số nhỏ nhất
 function smallestofNumber(){
   var min = arr[0]
@@ -68,9 +51,7 @@ function smallestofNumber(){
     }
     document.querySelector('#resultEx3').innerHTML = ' Số nhỏ nhất là: ' + min
 }
-
 getElement('#clickResults3').onclick = smallestofNumber
-
 // Ex4: Tìm số dương nhỏ nhất
 function findSmallestPositive(numbers) {
   var smallestPositive = null;
@@ -82,7 +63,6 @@ function findSmallestPositive(numbers) {
       }
     }
   }
-
   return smallestPositive;
 }
 getElement('#clickResults4').onclick = function()  {
@@ -92,9 +72,7 @@ getElement('#clickResults4').onclick = function()  {
   } else {
     document.querySelector('#resultEx4').innerHTML = ' Số dương nhỏ nhất trong mảng là: ' + result
   }
-
 }
-
 // Ex5 : Tìm số chẵn cuối cùng:
 function findLastEvenNumber(){
   var lastEven = -1
@@ -108,34 +86,25 @@ function findLastEvenNumber(){
       document.querySelector('#resultEx5').innerHTML = ' Không có số chẵn trong mảng '
     }
   }
- 
 }
 getElement('#clickResults5').onclick = findLastEvenNumber
-
 // EX6: Đổi chỗ các phần tử trong mảng 
-
 function doiCho(arr, index1, index2) {
   // Lưu giữ giá trị của phần tử tại index1 vào biến tạm thời
   var temp = arr[index1];
-
   // Gán giá trị của phần tử tại index2 cho phần tử tại index1
   arr[index1] = arr[index2];
-
   // Gán giá trị của biến tạm thời cho phần tử tại index2
   arr[index2] = temp;
-
   return arr; // Trả về mảng đã đổi chỗ
 }
-
 function changPosition (){
   var position1 = +document.querySelector('#inputofUser1').value
   var position2 = +document.querySelector('#inputofUser2').value
   var changeNumber = doiCho(arr,position1,position2)
   document.querySelector('#resultEx6').innerHTML = 'Mảng sau khi đổi: ' + changeNumber
 }
-
 getElement('#clickResults6').onclick = changPosition
-
 // EX7: Sắp xếp phần tử tăng dần 
 function arrangeNumber (){
     for(var i = 0; i < arr.length -1; i++){
@@ -149,11 +118,8 @@ function arrangeNumber (){
     }
     document.querySelector('#resultEx7').innerHTML = arr
 }
-
 getElement('#clickResults7').onclick = arrangeNumber
-
 // Ex8: Tìm số nguyên tố đầu tiên
-
 function primeofNumber(num) {
   if (num <= 1) {
     return false;
@@ -173,12 +139,10 @@ function firstNumberOfPrime(arr) {
   }
   return null;
 }
-
 getElement('#clickResults8').onclick = function(){
   var numbwrFirstPrime = firstNumberOfPrime(arr);
   getElement('#resultEx8').innerHTML = 'Số nguyên tố dầu tiên có trong mảng: ' + numbwrFirstPrime
 }
-
 // Ex9: Đếm số nguyên trong mảng 
 function countInter(){
   var count = 0
@@ -189,11 +153,8 @@ function countInter(){
   }
   getElement('#resultEx9').innerHTML =  "Số nguyên có trong mảng: " + count
 }
-
 getElement('#clickResults9').onclick =countInter
-
 // Ex10: So sánh số lượng âm và số lượng dương
-
 function numberofPositive(number1){
   var numPosiitive = 0
   for(var i = 0; i < number1.length; i++){
@@ -202,9 +163,7 @@ function numberofPositive(number1){
     }
   }
   return numPosiitive
-
 }
-
 function numberofNegative(number2){
   var numNegative = 0
   for(var j = 0; j < number2.length; j++){
@@ -213,15 +172,11 @@ function numberofNegative(number2){
     }
   }
   return numNegative
-
 }
-
 getElement('#clickResults10').onclick = function(){
-  var num1 =  numberofPositive(arr)
-  var num2 =  numberofNegative(arr)
-  if(num1 > num2){
+  if(numberofPositive(arr) >numberofNegative(arr)){
     getElement('#resultEx10').innerHTML = "Số dương > số âm"
-  }else if(num1 < num2){
+  }else{
     getElement('#resultEx10').innerHTML = "Số âm > số dương"
   }
 }
