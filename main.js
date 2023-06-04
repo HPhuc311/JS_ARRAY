@@ -134,14 +134,14 @@ function primeofNumber(num) {
 function firstNumberOfPrime(arr) {
   for (var i = 0; i < arr.length; i++) {
     if (Number.isInteger(arr[i]) && primeofNumber(arr[i])) {
-      return arr[i];
+      return 'Số nguyên tố dầu tiên có trong mảng: ' + arr[i];
     }
   }
-  return null;
+  return 'Không có số nguyên tố nào trong mảng ';
 }
 getElement('#clickResults8').onclick = function(){
   var numbwrFirstPrime = firstNumberOfPrime(arr);
-  getElement('#resultEx8').innerHTML = 'Số nguyên tố dầu tiên có trong mảng: ' + numbwrFirstPrime
+  getElement('#resultEx8').innerHTML = numbwrFirstPrime
 }
 // Ex9: Đếm số nguyên trong mảng 
 function countInter(){
