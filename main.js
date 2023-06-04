@@ -135,3 +135,21 @@ function changPosition (){
 }
 
 getElement('#clickResults6').onclick = changPosition
+
+// EX7: Sắp xếp phần tử tăng dần 
+function arrangeNumber (){
+    for(var i = 0; i < arr.length -1; i++){
+        for(var j = i + 1; j < arr.length; j++){
+            if(arr[i] > arr[j]){
+                var tmp = arr[i]
+                arr[i] = arr[j]
+                arr[j] = tmp
+            }
+        }
+    }
+    document.querySelector('#resultEx7').innerHTML = arr
+}
+
+getElement('#clickResults7').onclick = arrangeNumber
+
+// Ex8: Tìm số nguyên tố đầu tiên
