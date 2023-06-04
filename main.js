@@ -179,3 +179,49 @@ getElement('#clickResults8').onclick = function(){
   getElement('#resultEx8').innerHTML = 'Số nguyên tố dầu tiên có trong mảng: ' + numbwrFirstPrime
 }
 
+// Ex9: Đếm số nguyên trong mảng 
+function countInter(){
+  var count = 0
+  for(var i = 0; i < arr.length; i++){
+    if(Number.isInteger(arr[i])){
+      count ++
+    }
+  }
+  getElement('#resultEx9').innerHTML =  "Số nguyên có trong mảng: " + count
+}
+
+getElement('#clickResults9').onclick =countInter
+
+// Ex10: So sánh số lượng âm và số lượng dương
+
+function numberofPositive(number1){
+  var numPosiitive = 0
+  for(var i = 0; i < number1.length; i++){
+    if(arr[i] > 0){
+      numPosiitive ++
+    }
+  }
+  return numPosiitive
+
+}
+
+function numberofNegative(number2){
+  var numNegative = 0
+  for(var j = 0; j < number2.length; j++){
+    if(arr[j] < 0 ){
+      numNegative ++
+    }
+  }
+  return numNegative
+
+}
+
+getElement('#clickResults10').onclick = function(){
+  var num1 =  numberofPositive(arr)
+  var num2 =  numberofNegative(arr)
+  if(num1 > num2){
+    getElement('#resultEx10').innerHTML = "Số dương > số âm"
+  }else if(num1 < num2){
+    getElement('#resultEx10').innerHTML = "Số âm > số dương"
+  }
+}
