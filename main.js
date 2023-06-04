@@ -20,6 +20,15 @@ getElement('#clickToAdd').onclick= function(){
   inputArray()
   getElement('#resultEx').innerHTML = outputArray()
 }
+//EX1.1: Xóa mảng
+function removeElement(){
+  arr.pop()
+  console.log(arr)
+  getElement('#resultEx').innerHTML = arr
+}
+getElement('#clickToRemove').onclick= function(){
+  removeElement()
+}
 // Ex2: Tính tổng các số dương
 function sumofPositive(){
   var sum = 0
