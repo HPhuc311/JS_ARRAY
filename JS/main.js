@@ -173,10 +173,13 @@ function numberofNegative(number2){
   }
   return numNegative
 }
+
 getElement('#clickResults10').onclick = function(){
   if(numberofPositive(arr) >numberofNegative(arr)){
     getElement('#resultEx10').innerHTML = "Số dương > số âm"
-  }else{
+  }else if(numberofPositive(arr) < numberofNegative(arr)){
     getElement('#resultEx10').innerHTML = "Số âm > số dương"
+  }else{
+    getElement('#resultEx10').innerHTML = "Số âm = số dương"
   }
 }
