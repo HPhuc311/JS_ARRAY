@@ -156,13 +156,13 @@ function countInter(){
 getElement('#clickResults9').onclick =countInter
 // Ex10: So sánh số lượng âm và số lượng dương
 function numberofPositive(number1){
-  var numPosiitive = 0
+  var numPositive = 0
   for(var i = 0; i < number1.length; i++){
     if(arr[i] > 0){
-      numPosiitive ++
+      numPositive ++
     }
   }
-  return numPosiitive
+  return numPositive
 }
 function numberofNegative(number2){
   var numNegative = 0
@@ -175,7 +175,7 @@ function numberofNegative(number2){
 }
 
 getElement('#clickResults10').onclick = function(){
-  if(numberofPositive(arr) >numberofNegative(arr)){
+  if(numberofPositive(arr) > numberofNegative(arr)){
     getElement('#resultEx10').innerHTML = "Số dương > số âm"
   }else if(numberofPositive(arr) < numberofNegative(arr)){
     getElement('#resultEx10').innerHTML = "Số âm > số dương"
