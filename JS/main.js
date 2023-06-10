@@ -116,7 +116,7 @@ function arrangeNumber (){
             }
         }
     }
-    document.querySelector('#resultEx7').innerHTML = arr
+    document.querySelector('#resultEx7').innerHTML = 'Mảng sau khi được sắp xếp: ' +  arr
 }
 getElement('#clickResults7').onclick = arrangeNumber
 // Ex8: Tìm số nguyên tố đầu tiên
